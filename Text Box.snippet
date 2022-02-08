@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Txt</Title>
+			<Shortcut>txt</Shortcut>
+			<Description>Generate TextBox</Description>
+			<Author>Hussein Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			
+			<Code Language="HTML"><![CDATA[
+			 <div class="form-group">
+            <label class="control-label col-md-2">الاسم</label>
+            <div class="col-md-10">
+             <asp:TextBox runat="server" class="form-control" ID="txt_"></asp:TextBox>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="txt_" Font-Strikeout="False" ForeColor="Red"></asp:RequiredFieldValidator>
+
+            </div>
+        </div>
+			]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+
+
+
+

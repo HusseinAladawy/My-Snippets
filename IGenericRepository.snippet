@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>IGenericRepository</Title>
+			<Shortcut>iGenRepo</Shortcut>
+			<Description>IGenericRepository</Description>
+			<Author>Hussein Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			
+			<Code Language="csharp"><![CDATA[
+
+		  public interface IGenericRepository<T>
+    {
+        Task<IEnumerable<T>> GetAll();
+        Task<T> GetByID(int id);
+        Task Insert(T entity);
+        Task Update(T entity);
+        Task Delete(T entity);
+        Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate);
+    }
+	
+	]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+
+
+
+
